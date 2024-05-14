@@ -3,11 +3,9 @@ package com.harrypotterspells;
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
-{
-	public static void main(String[] args) throws Exception
-	{
-		ExternalPluginManager.loadBuiltin(harrypotterspellsconfig.class);
+public class ExamplePluginTest {
+	public static void main(String[] args) throws Exception {
+		ExternalPluginManager.loadBuiltin(HarryPotterSpellsPlugin.class);
 		RuneLite.main(args);
 	}
 }

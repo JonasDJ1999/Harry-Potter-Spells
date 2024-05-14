@@ -5,7 +5,7 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("example")
-public interface harrypotterspells extends Config
+public interface HarryPotterSpellsConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",
