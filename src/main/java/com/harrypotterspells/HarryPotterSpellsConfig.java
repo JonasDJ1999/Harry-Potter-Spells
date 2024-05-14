@@ -4,7 +4,7 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
+@ConfigGroup("A Plugin That Makes Your Character Say Harry Potter Spells When Casting Some Spells")
 public interface HarryPotterSpellsConfig extends Config
 {
 	@ConfigItem(
