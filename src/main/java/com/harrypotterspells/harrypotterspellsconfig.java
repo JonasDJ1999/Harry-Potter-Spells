@@ -1,4 +1,4 @@
-package com.example;
+package com.harrypotterspells;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -11,18 +11,19 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.runelite.api.events.GraphicChanged;
 
 @Slf4j
 @PluginDescriptor(
 	name = "Example"
 )
-public class ExamplePlugin extends Plugin
+public class harrypotterspellsconfig extends Plugin
 {
 	@Inject
 	private Client client;
 
 	@Inject
-	private ExampleConfig config;
+	private harrypotterspells config;
 
 	@Override
 	protected void startUp() throws Exception
@@ -46,8 +47,17 @@ public class ExamplePlugin extends Plugin
 	}
 
 	@Provides
-	ExampleConfig provideConfig(ConfigManager configManager)
+	harrypotterspells provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(ExampleConfig.class);
+		return configManager.getConfig(harrypotterspells.class);
+	}
+	@Subscribe
+	public void onGraphicChanged(GraphicChanged e)
+	{
+		if (client.getLocalPlayer() == e.getActor() && e.getActor().getGraphic() == 142)
+		{
+			e.getActor().setOverheadText("Accio!");
+			e.getActor().setOverheadCycle(1);
+		}
 	}
 }
