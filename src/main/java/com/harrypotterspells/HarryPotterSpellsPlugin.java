@@ -123,26 +123,25 @@ public class HarryPotterSpellsPlugin extends Plugin {
 				e.getActor().setOverheadText("Confundo!");
 				e.getActor().setOverheadCycle(75);
 			}
-			}
 			//Superheat Item
 			if (e.getActor().getGraphic() == 148) {
-			e.getActor().setOverheadText("Incendio!");
-			e.getActor().setOverheadCycle(75);
+				e.getActor().setOverheadText("Incendio!");
+				e.getActor().setOverheadCycle(75);
 			}
 			//Bake Pie
 			if (e.getActor().getGraphic() == 746) {
-			e.getActor().setOverheadText("Focillo!");
-			e.getActor().setOverheadCycle(75);
+				e.getActor().setOverheadText("Focillo!");
+				e.getActor().setOverheadCycle(75);
 			}
 			//Humidify
 			if (e.getActor().getGraphic() == 1061) {
-			e.getActor().setOverheadText("Auquamenti!");
-			e.getActor().setOverheadCycle(75);
+				e.getActor().setOverheadText("Auquamenti!");
+				e.getActor().setOverheadCycle(75);
 			}
 			//Plank Make
 			if (e.getActor().getGraphic() == 1063) {
-			e.getActor().setOverheadText("Diffindo!");
-			e.getActor().setOverheadCycle(75);
+				e.getActor().setOverheadText("Diffindo!");
+				e.getActor().setOverheadCycle(75);
 			}
 			//Greater Corruption
 			if (e.getActor().getGraphic() == 1878) {
@@ -151,6 +150,7 @@ public class HarryPotterSpellsPlugin extends Plugin {
 			}
 		}
 	}
+}
 
 /*
 		//Bind & Snare
