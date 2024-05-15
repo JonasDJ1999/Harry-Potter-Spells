@@ -50,102 +50,102 @@ public class HarryPotterSpellsPlugin extends Plugin {
 
 			//Air Strike & Air Bolt
 			if (e.getActor().getGraphic() == 90 || e.getActor().getGraphic() == 117) {
-				e.getActor().setOverheadText("Ventus!");
+				e.getActor().setOverheadText(config.airStrikeAndBoltText());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Air Blast, Air Wave & Air Surge
 			if (e.getActor().getGraphic() == 132 || e.getActor().getGraphic() == 158 || e.getActor().getGraphic() == 1455) {
-				e.getActor().setOverheadText("Ventus Duo!");
+				e.getActor().setOverheadText(config.airBlastWaveAndSurgeText());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Water Strike & Water Bolt
 			if (e.getActor().getGraphic() == 93 || e.getActor().getGraphic() == 120) {
-				e.getActor().setOverheadText("Aguamenti!");
+				e.getActor().setOverheadText(config.waterStrikeAndBoltText());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Water Blast, Water Wave & Water Surge
 			if (e.getActor().getGraphic() == 135 || e.getActor().getGraphic() == 161 || e.getActor().getGraphic() == 1458) {
-				e.getActor().setOverheadText("Aqua Eructo!");
+				e.getActor().setOverheadText(config.waterBlastWaveAndSurgeText());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Earth Strike & Earth Bolt
 			if (e.getActor().getGraphic() == 96 || e.getActor().getGraphic() == 123) {
-				e.getActor().setOverheadText("Verdimillius!");
+				e.getActor().setOverheadText(config.earthStrikeAndBoltText());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Earth Blast, Earth Wave & Earth Surge
 			if (e.getActor().getGraphic() == 138 || e.getActor().getGraphic() == 164 || e.getActor().getGraphic() == 1463) {
-				e.getActor().setOverheadText("Verdimillius Duo!");
+				e.getActor().setOverheadText(config.earthBlastWaveAndSurgeText());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Fire Strike
 			if (e.getActor().getGraphic() == 99) {
-				e.getActor().setOverheadText("Inflamare");
+				e.getActor().setOverheadText(config.fireStrike());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Fire Bolt
 			if (e.getActor().getGraphic() == 126) {
-				e.getActor().setOverheadText("Lacarnum Inflamari!");
+				e.getActor().setOverheadText(config.fireBolt());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Fire Blast
 			if (e.getActor().getGraphic() == 129) {
-				e.getActor().setOverheadText("Incendio!");
+				e.getActor().setOverheadText(config.fireBlast());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Fire Wave
 			if (e.getActor().getGraphic() == 155) {
-				e.getActor().setOverheadText("Incendio Duo!");
+				e.getActor().setOverheadText(config.fireWave());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Fire Surge
 			if (e.getActor().getGraphic() == 1464) {
-				e.getActor().setOverheadText("Incendio Tria!");
+				e.getActor().setOverheadText(config.fireSurge());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Telegrab
 			if (e.getActor().getGraphic() == 142) {
-				e.getActor().setOverheadText("Accio!");
+				e.getActor().setOverheadText(config.telegrab());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Vulnerability
 			if (e.getActor().getGraphic() == 167) {
-				e.getActor().setOverheadText("Stupefy!");
+				e.getActor().setOverheadText(config.vulnerability());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Entangle
 			if (e.getActor().getGraphic() == 177) {
-				e.getActor().setOverheadText("Petrificus Totalus!");
+				e.getActor().setOverheadText(config.entangle());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Stun
 			if (e.getActor().getGraphic() == 173) {
-				e.getActor().setOverheadText("Confundo!");
+				e.getActor().setOverheadText(config.stun());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Superheat Item
 			if (e.getActor().getGraphic() == 148) {
-				e.getActor().setOverheadText("Incendio!");
+				e.getActor().setOverheadText(config.superheat());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Bake Pie
 			if (e.getActor().getGraphic() == 746) {
-				e.getActor().setOverheadText("Focillo!");
+				e.getActor().setOverheadText(config.bakePie());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Humidify
 			if (e.getActor().getGraphic() == 1061) {
-				e.getActor().setOverheadText("Auquamenti!");
+				e.getActor().setOverheadText(config.humidify());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Plank Make
 			if (e.getActor().getGraphic() == 1063) {
-				e.getActor().setOverheadText("Diffindo!");
+				e.getActor().setOverheadText(config.plankMake());
 				e.getActor().setOverheadCycle(75);
 			}
 			//Greater Corruption
 			if (e.getActor().getGraphic() == 1878) {
-				e.getActor().setOverheadText("Morsmordre!");
+				e.getActor().setOverheadText(config.greaterCorruption());
 				e.getActor().setOverheadCycle(75);
 			}
 		}
